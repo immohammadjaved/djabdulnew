@@ -61,7 +61,7 @@ export function RevealImage({
         </motion.div>
       </motion.div>
       {caption && (
-        <figcaption className="mt-3 flex justify-between font-mono text-[10px] tracking-[0.2em] text-foreground/45 uppercase">
+        <figcaption className="mt-3 flex justify-between font-mono text-[10px] tracking-[0.2em] text-foreground/55 uppercase">
           {caption}
         </figcaption>
       )}

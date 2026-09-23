@@ -4,7 +4,8 @@ import { useLayoutEffect, useRef, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { EASE_OUT } from "@/lib/motion";
-import smokeSide from "@/assets/photos/smoke-side.jpg";
+import { Archive } from "@/components/site/archive";
+import sideGlance from "@/assets/photos/side-glance.jpg";
 import gazeUp from "@/assets/photos/gaze-up.jpg";
 import standing from "@/assets/photos/standing.jpg";
 import headDown from "@/assets/photos/head-down.jpg";
@@ -13,7 +14,7 @@ import profileRight from "@/assets/photos/profile-right.jpg";
 import decksAlt from "@/assets/photos/decks-alt.jpg";
 
 const FRAMES: { src: StaticImageData; alt: string; caption: string }[] = [
-  { src: smokeSide, alt: "DJ Abdul in profile through blue stage smoke", caption: "Smoke" },
+  { src: sideGlance, alt: "DJ Abdul in side profile, headphones around his neck, rim-lit in orange", caption: "Side light" },
   { src: standing, alt: "DJ Abdul standing, headphones around his neck", caption: "Stance" },
   { src: gazeUp, alt: "DJ Abdul looking up and away, lit from the side", caption: "Look up" },
   { src: decksAlt, alt: "DJ Abdul mid-set, hands out over the decks", caption: "Cue" },
@@ -81,7 +82,7 @@ export function Gallery() {
                 </span>
               </div>
               <h2 className="mt-4 font-display text-5xl tracking-tight uppercase sm:text-6xl">
-                In the room
+                Studio sessions
               </h2>
             </div>
             <div className="font-mono text-xs tracking-[0.2em] text-foreground/50 uppercase tabular-nums">
@@ -116,7 +117,7 @@ export function Gallery() {
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
                   </div>
-                  <figcaption className="mt-3 flex items-baseline gap-3 font-mono text-[10px] tracking-[0.2em] text-foreground/45 uppercase">
+                  <figcaption className="mt-3 flex items-baseline gap-3 font-mono text-[10px] tracking-[0.2em] text-foreground/55 uppercase">
                     <span className="signal">{String(i + 1).padStart(2, "0")}</span>
                     {frame.caption}
                   </figcaption>
@@ -137,6 +138,8 @@ export function Gallery() {
         </div>
       </div>
 
+      <Archive />
+
       <div className="mx-auto max-w-6xl px-5 py-24 sm:py-28">
         <div className="flex items-baseline gap-4">
           <span className="font-mono text-xs tracking-[0.2em] text-foreground/50 uppercase">
@@ -153,7 +156,7 @@ export function Gallery() {
               transition={{ duration: 0.5, delay: (i % 2) * 0.06, ease: EASE_OUT }}
               className="flex items-baseline gap-5 border-b border-border py-5 sm:odd:border-r sm:odd:pr-6 sm:even:pl-6"
             >
-              <span className="font-mono text-xs text-foreground/35 tabular-nums">
+              <span className="font-mono text-xs text-foreground/55 tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span className="text-lg text-foreground/85">{credit}</span>

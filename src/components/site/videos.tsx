@@ -139,7 +139,7 @@ export function Videos() {
                     )}
                     <span
                       className={`font-mono text-xs tabular-nums ${
-                        isActive ? "signal" : "text-foreground/35"
+                        isActive ? "signal" : "text-foreground/55"
                       }`}
                     >
                       {String(i + 1).padStart(2, "0")}
@@ -148,7 +148,7 @@ export function Videos() {
                       <span className="block truncate font-display text-xl tracking-tight uppercase">
                         {video.title}
                       </span>
-                      <span className="mt-0.5 block truncate font-mono text-[10px] tracking-[0.15em] text-foreground/45 uppercase">
+                      <span className="mt-0.5 block truncate font-mono text-[10px] tracking-[0.15em] text-foreground/55 uppercase">
                         {video.mix}
                         {video.with && <> &middot; w/ {video.with}</>}
                       </span>
@@ -157,7 +157,7 @@ export function Videos() {
                       className={`size-3.5 transition-colors ${
                         isActive
                           ? "signal fill-current"
-                          : "text-foreground/30 group-hover:text-foreground/70"
+                          : "text-foreground/45 group-hover:text-foreground/70"
                       }`}
                     />
                   </button>

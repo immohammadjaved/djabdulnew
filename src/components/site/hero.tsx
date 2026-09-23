@@ -143,6 +143,8 @@ export function Hero() {
             delay={0.35}
             className="hero-outline text-[22vw] sm:text-[16vw] md:text-[10vw]"
           />
+          {/* keeps the extracted text as "DJ Abdul" rather than "DJAbdul" */}
+          {" "}
           <MaskedWord
             word="Abdul"
             delay={0.45}

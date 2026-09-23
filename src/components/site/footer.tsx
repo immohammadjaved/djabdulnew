@@ -51,9 +51,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
+            <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/55">
               Navigate
-            </h4>
+            </h2>
             <ul className="mt-4 flex flex-col gap-2.5">
               {LINKS.map((link) => (
                 <li key={link.href}>
@@ -69,9 +69,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
+            <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/55">
               Follow
-            </h4>
+            </h2>
             <ul className="mt-4 flex flex-col gap-2.5">
               {SOCIALS.map((social) => (
                 <li key={social.label}>
@@ -89,18 +89,26 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/40">
+            <h2 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground/55">
               Contact
-            </h4>
+            </h2>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm text-foreground/70">
-              <li>djabdul23@gmail.com</li>
-              <li>+91 88673 36482</li>
+              <li>
+                <a href="mailto:djabdul23@gmail.com" className="transition-colors hover:text-[var(--signal)]">
+                  djabdul23@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+918867336482" className="transition-colors hover:text-[var(--signal)]">
+                  +91 88673 36482
+                </a>
+              </li>
               <li>Bangalore, India</li>
             </ul>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-border pt-6 font-mono text-xs uppercase tracking-wider text-foreground/40 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-border pt-6 font-mono text-xs uppercase tracking-wider text-foreground/55 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} DJ Abdul. All rights reserved.</p>
           <p>Designed for the dance floor.</p>
         </div>

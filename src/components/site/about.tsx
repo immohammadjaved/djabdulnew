@@ -50,7 +50,7 @@ export function About() {
               className="mt-6 font-display text-5xl leading-[0.92] tracking-tight uppercase sm:text-6xl lg:text-7xl"
             >
               Nearly three decades
-              <span className="text-foreground/35"> behind the decks.</span>
+              <span className="text-foreground/45"> behind the decks.</span>
             </motion.h2>
 
             <div className="mt-10 flex flex-col gap-6 text-lg leading-relaxed text-foreground/75">
@@ -75,7 +75,7 @@ export function About() {
               <p className="font-display text-2xl leading-tight tracking-tight uppercase sm:text-3xl">
                 &ldquo;The love &amp; respect for the music made me a DJ.&rdquo;
               </p>
-              <footer className="mt-3 font-mono text-xs tracking-[0.2em] text-foreground/45 uppercase">
+              <footer className="mt-3 font-mono text-xs tracking-[0.2em] text-foreground/55 uppercase">
                 DJ Abdul
               </footer>
             </motion.blockquote>

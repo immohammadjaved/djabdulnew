@@ -5,7 +5,7 @@ import { ArrowUpRight, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EASE_OUT } from "@/lib/motion";
 import { RevealImage } from "@/components/site/reveal-image";
-import decks from "@/assets/photos/decks.jpg";
+import listening from "@/assets/photos/listening.jpg";
 
 const STYLES = [
   { n: "01", title: "Bollywood Remixes", tag: "Signature" },
@@ -48,7 +48,7 @@ export function Sound() {
             <h2 className="mt-4 font-display text-5xl tracking-tight uppercase sm:text-6xl">
               Reads the room,
               <br />
-              <span className="text-foreground/35">then moves it.</span>
+              <span className="text-foreground/45">then moves it.</span>
             </h2>
           </div>
           <Button
@@ -83,7 +83,7 @@ export function Sound() {
                 transition={{ duration: 0.5, delay: i * 0.05, ease: EASE_OUT }}
                 className="invert-row group grid grid-cols-[2.5rem_1fr_auto] items-center gap-4 border-b border-border px-2 py-6 sm:grid-cols-[3rem_1fr_auto_auto] sm:gap-8 sm:px-4"
               >
-                <span className="font-mono text-xs text-foreground/40 group-hover:text-background/60">
+                <span className="font-mono text-xs text-foreground/55 group-hover:text-background/60">
                   {style.n}
                 </span>
                 <h3 className="flex min-w-0 items-center gap-4 font-display text-2xl tracking-tight uppercase sm:text-4xl">
@@ -101,12 +101,12 @@ export function Sound() {
           </div>
 
           <RevealImage
-            src={decks}
-            alt="DJ Abdul in headphones, hands out over the decks mid-mix"
+            src={listening}
+            alt="DJ Abdul in sunglasses and headphones, glancing down through orange and blue stage smoke"
             sizes="(min-width: 1024px) 22rem, 100vw"
-            frameClassName="aspect-[4/5] lg:aspect-[2/3]"
+            frameClassName="aspect-[4/5]"
             className="lg:sticky lg:top-24 lg:self-start"
-            caption="Fig. 02 — Mid-mix"
+            caption="Fig. 02 — Listening"
           />
         </div>
       </div>
