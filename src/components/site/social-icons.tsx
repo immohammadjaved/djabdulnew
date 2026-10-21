@@ -55,14 +55,3 @@ export function TiktokIcon(props: SVGProps<SVGSVGElement>) {
     </IconBase>
   );
 }
-
-export function SoundcloudIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <IconBase {...props}>
-      <path d="M3 13v4" />
-      <path d="M6 11v6" />
-      <path d="M9 9.5v7.5" />
-      <path d="M12 8v9h6.5a3.5 3.5 0 0 0 .4-6.98A4.5 4.5 0 0 0 12 8" />
-    </IconBase>
-  );
-}

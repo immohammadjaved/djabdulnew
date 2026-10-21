@@ -24,7 +24,6 @@ const jsonLd = {
   knowsAbout: ["Bollywood remixes", "Latin", "Tribal", "Progressive house"],
   sameAs: [
     "https://www.instagram.com/djabdulindia/",
-    "https://soundcloud.com/djabdulindia",
     "https://www.youtube.com/channel/UCx2W91p0j2Kj6LKh56HMmEQ",
     "https://www.facebook.com/djabdulindia",
   ],

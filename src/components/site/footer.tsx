@@ -1,14 +1,15 @@
 import { ArrowUpRight } from "lucide-react";
-import { LogoMark, LogoWordmark } from "@/components/site/logo";
+import { Logo } from "@/components/site/logo";
+import { MIXES_URL } from "@/lib/site";
 
 const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/djabdulindia/" },
-  { label: "SoundCloud", href: "https://soundcloud.com/djabdulindia" },
   {
     label: "YouTube",
     href: "https://www.youtube.com/channel/UCx2W91p0j2Kj6LKh56HMmEQ",
   },
   { label: "Facebook", href: "https://www.facebook.com/djabdulindia" },
+  { label: "Mixes", href: MIXES_URL },
 ];
 
 const LINKS = [
@@ -41,9 +42,8 @@ export function Footer() {
 
         <div className="grid grid-cols-2 gap-10 py-12 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
-            <a href="#home" className="flex items-center gap-2.5">
-              <LogoMark className="h-8 w-8" />
-              <LogoWordmark size="text-lg" />
+            <a href="#home" className="flex items-center">
+              <Logo className="h-8 w-auto" />
             </a>
             <p className="mt-4 max-w-[20ch] text-sm text-foreground/60">
               DJ &amp; producer behind the decks since 1996.

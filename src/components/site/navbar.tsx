@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { LogoMark, LogoWordmark } from "@/components/site/logo";
+import { Logo } from "@/components/site/logo";
 
 const NAV_LINKS = [
   { href: "#about", label: "About", index: "01" },
@@ -45,9 +45,8 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link href="#home" className="flex items-center gap-2.5">
-          <LogoMark className="h-8 w-8" />
-          <LogoWordmark size="text-lg" />
+        <Link href="#home" className="flex items-center">
+          <Logo className="h-8 w-auto sm:h-9" priority />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
@@ -93,10 +92,7 @@ export function Navbar() {
           >
             <SheetHeader className="flex-row items-center justify-between border-b border-border px-5 py-4">
               <SheetTitle>
-                <span className="flex items-center gap-2">
-                  <LogoMark className="h-7 w-7" />
-                  <LogoWordmark size="text-base" />
-                </span>
+                <Logo className="h-7 w-auto" />
               </SheetTitle>
               <SheetClose
                 render={

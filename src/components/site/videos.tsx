@@ -8,6 +8,8 @@ import { EASE_OUT } from "@/lib/motion";
 import { YoutubeIcon } from "@/components/site/social-icons";
 
 const VIDEOS = [
+  { id: "gdRsuUtZdCs", title: "Gur Nalon Ishq Mitha", mix: "Hip Hop Mix", with: "DJ Ganesh" },
+  { id: "v-cITgOSMIk", title: "Tujhe Aksa Beach", mix: "Hip Hop Mix", with: "DJ Ganesh" },
   { id: "HtCmAkrnJRo", title: "Aayi Nai", mix: "Club Mix", with: "DJ Ganesh" },
   { id: "XDfe3pcoqd8", title: "Kaavaalaa", mix: "Circuit Mix", with: "DJ Ganesh" },
   { id: "cHrJYB7l06M", title: "Numb vs 9:59", mix: "Mashup", with: "DJ Ganesh" },

@@ -1,18 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Headphones } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EASE_OUT } from "@/lib/motion";
 import { RevealImage } from "@/components/site/reveal-image";
+import { MIXES_URL } from "@/lib/site";
 import listening from "@/assets/photos/listening.jpg";
 
+// Mirrors what's actually in the mixes folder (MIXES_URL) — 100+ tracks,
+// almost entirely Bollywood/Punjabi remixes tagged by mix style.
 const STYLES = [
   { n: "01", title: "Bollywood Remixes", tag: "Signature" },
-  { n: "02", title: "Latin", tag: "Specialty" },
-  { n: "03", title: "Tribal", tag: "Specialty" },
-  { n: "04", title: "Progressive House", tag: "Specialty" },
-  { n: "05", title: "Retro", tag: "Crowd work" },
+  { n: "02", title: "Club Mix", tag: "Specialty" },
+  { n: "03", title: "Tech House", tag: "Specialty" },
+  { n: "04", title: "Punjabi & Dhol", tag: "Specialty" },
+  { n: "05", title: "Mashups", tag: "Crowd work" },
   { n: "06", title: "Hip-Hop", tag: "Crowd work" },
 ];
 
@@ -56,7 +59,7 @@ export function Sound() {
             className="hard-shadow h-11 shrink-0 rounded-none bg-primary px-5 text-primary-foreground hover:bg-primary"
             render={
               <a
-                href="https://soundcloud.com/djabdulindia"
+                href={MIXES_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -64,8 +67,8 @@ export function Sound() {
             }
             nativeButton={false}
           >
-            <Headphones className="size-4" />
-            Listen on SoundCloud
+            <Download className="size-4" />
+            Download the Mixes
           </Button>
         </motion.div>
 
@@ -74,7 +77,7 @@ export function Sound() {
             {STYLES.map((style, i) => (
               <motion.a
                 key={style.title}
-                href="https://soundcloud.com/djabdulindia"
+                href={MIXES_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 12 }}
